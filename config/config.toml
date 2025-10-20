@@ -1,0 +1,142 @@
+# EDITH-QA Configuration
+
+# Environment Configuration
+[environment]
+# Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_level = "INFO"
+
+# Log directory
+log_dir = "logs"
+
+# Screenshot directory
+screenshot_dir = "images"
+
+# Maximum execution time per task (seconds)
+max_execution_time = 300
+
+# Enable recovery mechanisms
+enable_recovery = true
+
+# Agent Configuration
+[agents.planner]
+# GPT-4 model configuration
+model = "gpt-4"
+temperature = 0.2
+max_tokens = 1000
+timeout = 30
+
+[agents.executor]
+# Execution configuration
+step_delay = 1.0
+max_retries = 3
+screenshot_format = "PNG"
+enable_mock_mode = true
+
+[agents.verifier]
+# Verification configuration
+min_keyword_matches = 3
+case_sensitive = false
+enable_fuzzy_matching = true
+
+[agents.supervisor]
+# Supervisor configuration
+max_iterations = 15
+enable_dynamic_replanning = false
+enable_parallel_execution = false
+
+# Agent-S Integration
+[agent_s]
+# Agent-S2 configuration
+provider = "anthropic"
+model = "claude-3-7-sonnet-20250219"
+grounding_model_provider = "anthropic"
+grounding_model = "claude-3-7-sonnet-20250219"
+grounding_model_resize_width = 1366
+
+# Action space: pyautogui, accessibility
+action_space = "pyautogui"
+
+# Observation type: screenshot, mixed, accessibility_tree
+observation_type = "mixed"
+
+# Search engine: Perplexica, None
+search_engine = "Perplexica"
+
+# Embedding engine: openai, gemini
+embedding_engine_type = "openai"
+
+# Android World Configuration
+[android_world]
+# Android emulator configuration
+emulator_name = "AndroidWorldAvd"
+console_port = 5554
+adb_path = ""
+
+# Task configuration
+suite_family = "android_world"
+n_task_combinations = 1
+task_random_seed = 30
+
+# Performance settings
+transition_pause = 0.2
+max_steps_per_task = 50
+
+# API Configuration
+[api]
+# OpenAI API
+openai_api_key = ""
+openai_base_url = "https://api.openai.com/v1"
+
+# Anthropic API
+anthropic_api_key = ""
+anthropic_base_url = "https://api.anthropic.com"
+
+# Hugging Face API
+hf_token = ""
+hf_base_url = "https://api-inference.huggingface.co"
+
+# Perplexica Configuration
+[perplexica]
+url = "http://localhost:3000/api/search"
+timeout = 30
+max_retries = 3
+
+# Security Configuration
+[security]
+# Enable security checks
+enable_security_scan = true
+
+# Allowed file extensions for screenshots
+allowed_image_extensions = ["png", "jpg", "jpeg"]
+
+# Maximum file size for screenshots (MB)
+max_screenshot_size = 10
+
+# Rate limiting
+rate_limit_per_minute = 60
+rate_limit_per_hour = 1000
+
+# Development Configuration
+[development]
+# Enable debug mode
+debug = false
+
+# Enable profiling
+enable_profiling = false
+
+# Enable memory monitoring
+enable_memory_monitoring = false
+
+# Test configuration
+[testing]
+# Test timeout (seconds)
+test_timeout = 60
+
+# Enable parallel testing
+parallel_tests = false
+
+# Test data directory
+test_data_dir = "test_data"
+
+# Coverage configuration
+coverage_threshold = 80

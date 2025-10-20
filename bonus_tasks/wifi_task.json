@@ -1,0 +1,31 @@
+{
+  "task": "Turn off Wi-Fi via Android Settings",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Open the Settings app from the home screen or app drawer"
+    },
+    {
+      "step": 2,
+      "description": "Tap on 'Network & Internet'"
+    },
+    {
+      "step": 3,
+      "description": "Tap on 'Wi-Fi'"
+    },
+    {
+      "step": 4,
+      "description": "Toggle the Wi-Fi switch to the OFF position"
+    },
+    {
+      "step": 5,
+      "description": "Verify that Wi-Fi is disabled (icon disappears or shows 'Off')"
+    }
+  ],
+  "verification": {
+    "final_state": "Wi-Fi is OFF",
+    "confirmed_by": "Video evidence",
+    "video": "wifi_bonus_demo.mp4",
+    "status": "PASS"
+  }
+}
