@@ -227,19 +227,6 @@ black edith_core/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- [Agent-S](https://github.com/simular-ai/Agent-S) for advanced computer vision capabilities
-- [Android World](https://github.com/google-research/android_world) for comprehensive Android testing environment
-- OpenAI for GPT-4 planning capabilities
-- Anthropic for Claude integration
-
-## 📞 Support
-
-- 📧 **Email**: support@edith-qa.com
-- 💬 **Discord**: [Join our community](https://discord.gg/edith-qa)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/edith-qa/issues)
-- 📖 **Wiki**: [Project Wiki](https://github.com/yourusername/edith-qa/wiki)
 
 ---
 
